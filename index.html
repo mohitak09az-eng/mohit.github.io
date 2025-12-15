@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mayank Profile</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(to right, #141e30, #243b55);
+      color: white;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .card {
+      text-align: center;
+      cursor: pointer;
+    }
+    img {
+      width: 150px;
+      border-radius: 50%;
+      border: 3px solid white;
+    }
+  </style>
+</head>
+<body>
+
+<div class="card" onclick="playMusic()">
+  <img src="profile.jpg" alt="Profile">
+  <h2>Mayank</h2>
+  <p>Click my profile</p>
+</div>
+
+<audio id="music">
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  function playMusic() {
+    document.getElementById("music").play();
+  }
+</script>
+
+</body>
+</html>
